@@ -416,7 +416,7 @@ app.controller('controlGrillaProducto', function($scope, $auth,$http,$location,$
 		$state.go('grillaProductos');
 		$scope.DatoUsuario=$auth.getPayload().nombre+" | "+$auth.getPayload().perfil;               
 	}else{               
-		$state.go('login');
+		$state.go('error');
 		$scope.DatoUsuario=$auth.getPayload().nombre+" | "+$auth.getPayload().perfil;
 	}
 
